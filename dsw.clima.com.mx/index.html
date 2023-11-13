@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/clima.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Aplicación de clima</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la aplicación de clima</h1>
+        <br>
+
+        <input type="text" id="cityInput" placeholder="Ingrese el nombre de la ciudad" required>
+        <button  onclick="getCurrentWeather()">Consultar Clima Actual</button>
+        <button  onclick="getForecast()">Consultar Pronóstico 5 Días</button>
+
+        
+    </div>
+    <div id="div_resultados" class="resultados" style="display: flex;"></div>
+</body>
+</html>
